@@ -11,8 +11,9 @@ public class LearningCurve : MonoBehaviour
         Character2 villain = hero;
         villain.name = "Marvin";
         hero.PrintStatsInfo();
-        villain.PrintStatsInfo(); 
-      
+        villain.PrintStatsInfo();
+
+
         Character2 heroin = new Character2("Mantha");
         heroin.PrintStatsInfo();
 
@@ -24,7 +25,8 @@ public class LearningCurve : MonoBehaviour
         huntingBow.PrintWeaponStats();
         warbow.PrintWeaponStats();
 
-       
+        Paladin knight = new Paladin("Sir Marvin", huntingBow);
+        knight.PrintStatsInfo();
 
         
     }

@@ -10,6 +10,7 @@ public class Character2
     public Character2()
     {
         name = "Not Assigned";
+        Reset();
     }
   
     public Character2(string name)
@@ -17,9 +18,17 @@ public class Character2
         this.name = name; 
     }
 
-    public void PrintStatsInfo()
+    
+
+    public virtual void PrintStatsInfo()
     {
         Debug.Log($"Hero {this.name} - {this.exp} EXP");
+    }
+
+    private void Reset()
+    {
+        this.name = "Not Assigned";
+        this.exp = 0;
     }
     
 }
