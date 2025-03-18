@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class LearningCurve : MonoBehaviour
 {
-    
+    public Transform CamTransform;
+
     private void Start()
     {
+        CamTransform = this.GetComponent<Transform>();
+        Debug.Log(CamTransform.localPosition);
+
         Character2 hero = new Character2();
         Character2 villain = hero;
         villain.name = "Marvin";
