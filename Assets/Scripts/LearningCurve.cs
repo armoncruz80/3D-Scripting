@@ -20,13 +20,21 @@ public class LearningCurve : MonoBehaviour
         //huntingBow.PrintWeaponStats();
 
 
-        ////difference between class and structs
-        //Character hero = new Character();
-        //Character villain = hero;
-        //villain.name = "Sir Kane the bold";
+        //difference between class and structs
+        Character hero = new Character();
+        Character villain = hero;
+        villain.name = "Sir Kane the bold";
 
-        //hero.PrintStatusInfo();
-        //villain.PrintStatusInfo();
+        hero.PrintStatusInfo();
+        villain.PrintStatusInfo();
+
+        Weapon huntingBow = new Weapon("Hunting Bow", 105);
+        Weapon warBow = huntingBow;
+        warBow.name = "War Bow Unlimited";
+        warBow.damage = 255;
+
+        huntingBow.PrintWeaponStats();
+        warBow.PrintWeaponStats();
 
 
     }
