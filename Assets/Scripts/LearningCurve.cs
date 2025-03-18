@@ -7,10 +7,30 @@ public class LearningCurve : MonoBehaviour
     
     void Start()
     {
-        Character hero = new Character();
-        Debug.Log($"Hero: {hero.name} - {hero.exp} EXP");
+        ////first instance of the class character
+        //Character hero = new Character();
+        //hero.PrintStatusInfo();
+
+        ////second instance of the class character
+        //Character heroine = new Character("Agatha");
+        //heroine.PrintStatusInfo();
+
+        ////instanstiate using structs
+        //Weapon huntingBow = new Weapon("Hunting Bow", 105);
+        //huntingBow.PrintWeaponStats();
+
+
+        ////difference between class and structs
+        //Character hero = new Character();
+        //Character villain = hero;
+        //villain.name = "Sir Kane the bold";
+
+        //hero.PrintStatusInfo();
+        //villain.PrintStatusInfo();
+
+
     }
 
-   
-    
+
+
 }
