@@ -7,26 +7,30 @@ public class LearningCurve : MonoBehaviour
     
     void Start()
     {
-        ////first instance of the class character
+        ////FIRST INSTANCE OF THE CLASS CHARACTER
         //Character hero = new Character();
         //hero.PrintStatusInfo();
 
-        ////second instance of the class character
+        ////SECOND INSTANCE OF THE CLASS CHARACTER
         //Character heroine = new Character("Agatha");
         //heroine.PrintStatusInfo();
 
-        ////instanstiate using structs
+        ////EXTRA INSTANTIATE
+        //Character hero2 = new Character();
+        //hero2.PrintStatusInfo();
+
+        ////INSTANTIATE USING STRUCTS
         //Weapon huntingBow = new Weapon("Hunting Bow", 105);
         //huntingBow.PrintWeaponStats();
 
 
-        //difference between class and structs
-        Character hero = new Character();
-        Character villain = hero;
-        villain.name = "Sir Kane the bold";
+        ////DIFFERENCE BETWEEN CLASS AND STRUCTS
+        //Character hero = new Character();
+        //Character villain = hero;
+        //villain.name = "Sir Kane the bold";
 
-        hero.PrintStatusInfo();
-        villain.PrintStatusInfo();
+        //hero.PrintStatusInfo();
+        //villain.PrintStatusInfo();
 
         Weapon huntingBow = new Weapon("Hunting Bow", 105);
         Weapon warBow = huntingBow;
@@ -35,6 +39,15 @@ public class LearningCurve : MonoBehaviour
 
         huntingBow.PrintWeaponStats();
         warBow.PrintWeaponStats();
+
+
+        ////ENCAPSULATION
+        //hero.PrintStatusInfo();
+        //heroine.PrintStatusInfo();
+
+        Paladin knight = new Paladin("Sir Arthur", huntingBow);
+        knight.PrintStatusInfo();
+       
 
 
     }

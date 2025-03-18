@@ -11,6 +11,7 @@ public class Character
     public Character()
     {
         name = "Not assigned";
+       
     }
 
     public Character(string name)
@@ -18,8 +19,14 @@ public class Character
         this.name = name;
     }
 
-    public void PrintStatusInfo()
+    public virtual void PrintStatusInfo()
     {
         Debug.Log($"Hero: {this.name} - {this.exp} EXP");
+    }
+
+    private void Reset()
+    {
+        this.name = "Not assigned";
+        this.exp = 0;
     }
 }
